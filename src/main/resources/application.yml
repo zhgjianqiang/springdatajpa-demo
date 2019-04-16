@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: jpa-demo
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://172.19.79.8:26257/test4db?useUnicode=true&sslmode=require&characterEncoding=UTF-8
+    username: fuyun
+    password: fuyun2019
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    baseline-on-migrate: true
+    enabled: true
+    #db/migration 是 flyway.location的默认值
+    locations: [classpath:db/migration]
+server:
+  port: 8080
+#logging:
+#  level:
+#    org.flywaydb.core: debug
