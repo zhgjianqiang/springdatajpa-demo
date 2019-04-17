@@ -8,5 +8,4 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 public interface DepartmentRepository extends JpaRepository<Department, String>, JpaSpecificationExecutor<Department> {
 
-
 }
