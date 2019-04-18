@@ -1,6 +1,7 @@
 create table users (
     id uuid default gen_random_uuid() primary key,
     name varchar(64),
+    status boolean,
     address_id uuid,
     department_id uuid
 );

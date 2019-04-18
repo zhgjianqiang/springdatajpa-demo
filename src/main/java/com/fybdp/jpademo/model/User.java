@@ -30,6 +30,8 @@ public class User {
 
     private String name;
 
+    private boolean status;
+
     @OneToOne
     private Address address;
 
