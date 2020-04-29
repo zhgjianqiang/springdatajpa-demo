@@ -1,13 +1,11 @@
 package com.fybdp.jpademo.controller;
 
-import com.fybdp.jpademo.model.Business;
 import com.fybdp.jpademo.model.User;
 import com.fybdp.jpademo.repository.UserRepository;
 import com.fybdp.jpademo.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.DeleteMapping;

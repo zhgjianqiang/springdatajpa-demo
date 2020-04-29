@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.util.List;
+import java.util.UUID;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -26,7 +27,7 @@ public class User {
     @Id
     @GenericGenerator(name = "jpa-uuid", strategy = "uuid2")
     @GeneratedValue(generator = "jpa-uuid")
-    private String id;
+    private UUID id;
 
     private String name;
 

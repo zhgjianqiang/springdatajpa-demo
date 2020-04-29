@@ -5,7 +5,9 @@ import com.fybdp.jpademo.model.Business;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
-public interface BusinessRepository extends JpaRepository<Business, String>, JpaSpecificationExecutor<Business> {
+import java.util.UUID;
+
+public interface BusinessRepository extends JpaRepository<Business, UUID>, JpaSpecificationExecutor<Business> {
 
 
 }

@@ -1,5 +1,5 @@
 create table users (
-    id uuid default gen_random_uuid() primary key,
+    id uuid default uuid_generate_v4() primary key,
     name varchar(64),
     status boolean,
     address_id uuid,
@@ -7,17 +7,17 @@ create table users (
 );
 
 create table addresses (
-    id uuid default gen_random_uuid() primary key,
+    id uuid default uuid_generate_v4() primary key,
     info varchar(128)
 );
 
 create table departments (
-    id uuid default gen_random_uuid() primary key,
+    id uuid default uuid_generate_v4() primary key,
     name varchar(32)
 );
 
 create table businesses (
-    id uuid default gen_random_uuid() primary key,
+    id uuid default uuid_generate_v4() primary key,
     name varchar(32)
 );
 
